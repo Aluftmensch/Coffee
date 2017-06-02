@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- pignose css -->
+<link href="css/pignose.layerslider.css" rel="stylesheet" type="text/css" media="all" />
+
+
+<!-- //pignose css -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- cart -->
+	<script src="js/simpleCart.min.js"></script>
+<!-- cart -->
+<!-- for bootstrap working -->
+	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+<!-- //for bootstrap working -->
+<!--< link href='http://fonts.useso.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'> -->
+<script src="js/jquery.easing.min.js"></script>
+
+<style>
+body{
+	font-family: 宋体;
+}
+    #container{width:80%;margin:0 auto}
+	.div1{float:left;width:280px; vertical-align:top;margin-top:0px;text-align:left}
+	.div2{float:left;width:180px;color:white}
+	.div3{float:left;width:115px;text-align:center}
+	.div4{float:left;width:115px;text-align:center}
+	.div5{float:left;width:115px;text-align:center}
+	.div6{float:left;width:100px;}
+   .div7{clear:both;}
+	.outter{background: white;border-top:solid 1px gray;
+	border-bottom:solid 1px #778899;
+	padding:10px;margin:10px; position:relative}
+	a{text-decoration:none;color: black}
+
+
+	.itempic{border :solid 1px #01bcbc;
+	background:white;position:absolute;top:-80px;left:130px;	z-index:999;display:none}
+
+	.itempic img{text-align:center;vertical-align:center}
+	.footer{font-size:12px;line-height:20px;text-align:center;}
+
+	.resp-tabs-container img{
+                width: 260px;
+                height:250px;
+                text-align: center;
+	}
+	footer {
+    background-color: #202020;
+    margin-top: 20px;
+    color: #ddd;
+    padding: 20px 0 10px;
+    text-align: center;
+}
+	
+</style>
+</head>
+<body>
+<!-- header -->
+
+<!-- //header -->
+<!-- header-bot -->
+<div class="header-bot">
+	<div class="container">
+		<div class="col-md-3 header-left">
+			<h1><a href="index.html"><img src="images/logo.png"></a></h1>
+		</div>
+		<div class="col-md-6 header-middle">
+			<form>
+				<div class="search">
+					<input type="search" value="搜索" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}" required="">
+				</div>
+				<div class="section_room">
+					<select id="country" onChange="change_country(this.value)" class="frm-field required">
+						<option value="null">所有商品</option>
+						<option value="null">咖啡</option> 
+						<option value="null">咖啡豆</option>     
+						<option value="AX">咖啡研磨机</option>
+						
+					</select>
+				</div>
+				<div class="sear-sub">
+					<input type="submit" value=" ">
+				</div>
+				<div class="clearfix"></div>
+			</form>
+		</div>
+		<div class="col-md-3 header-right footer-bottom">
+			<ul>
+				<li><a href="#" class="use1" data-toggle="modal" data-target="#myModal4"></a>
+				</li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- //header-bot -->
+<!-- banner -->
+<div class="ban-top">
+	<div class="container">
+		<div class="top_nav_left">
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
+				  <ul class="nav navbar-nav menu__list">
+					<li class="active menu__item menu__item--current"><a class="menu__link" href="index.html">首页 <span class="sr-only">(current)</span></a></li>
+					<li class="dropdown menu__item">
+						<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">咖啡<span class="caret"></span></a>
+							<ul class="dropdown-menu multi-column columns-3">
+								<div class="row">
+									<div class="col-sm-6 multi-gd-img1 multi-gd-text ">
+										<a href="coffee.html"><img src="images/11.jpg" alt=" "/></a>
+									</div>
+									<div class="col-sm-3 multi-gd-img">
+										<ul class="multi-column-dropdown">
+											<li><a href="coffee.html">玛瑙咖啡</a></li>
+											<li><a href="coffee.html">维也纳风情冰咖啡</a></li>
+											<li><a href="coffee.html">冷酿咖啡</a></li>
+											<li><a href="coffee.html">卡布奇诺咖啡</a></li>
+											<li><a href="coffee.html">咖啡新冰乐</a></li>
+											<li><a href="coffee.html">拿铁咖啡</a></li>
+											<li><a href="coffee.html">暴风雪酿品冰咖啡</a></li>
+										</ul>
+									</div>
+									
+									<div class="clearfix"></div>
+								</div>
+							</ul>
+					</li>
+					<li class="dropdown menu__item">
+						<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">咖啡豆 <span class="caret"></span></a>
+							<ul class="dropdown-menu multi-column columns-3">
+								<div class="row">
+									<div class="col-sm-3 multi-gd-img">
+										<ul class="multi-column-dropdown">
+											<li><a href="bean.html">猫屎咖啡豆</a></li>
+											<li><a href="bean.html">卓越碳烧咖啡豆</a></li>
+											<li><a href="bean.html">蓝山风味咖啡豆</a></li>
+											<li><a href="bean.html">山多士巴西咖啡豆</a></li>
+											<li><a href="bean.html">意式浓缩咖啡豆</a></li>
+											<li><a href="bean.html">苏门答腊曼特宁咖啡豆</a></li>
+											<li><a href="bean.html">西娜曼特宁咖啡豆</a></li>
+										</ul>
+									</div>
+									
+									<div class="col-sm-6 multi-gd-img multi-gd-text ">
+										<a href="bean.html"><img src="images/1.jpg" alt=" "/></a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</ul>
+					</li>
+					<li class="dropdown menu__item">
+						<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">咖啡研磨机 <span class="caret"></span></a>
+							<ul class="dropdown-menu multi-column columns-3">
+								<div class="row">
+									<div class="col-sm-3 multi-gd-img">
+										<ul class="multi-column-dropdown">
+											<li><a href="machine.html">咖啡磨豆机SL-097</a></li>
+											<li><a href="machine.html">咖啡磨豆机SL-084</a></li>
+											<li><a href="machine.html">电动磨豆机</a></li>
+											<li><a href="machine.html">大飞鹰电动磨豆机</a></li>
+											<li><a href="machine.html">磨豆机A27</a></li>
+											
+										</ul>
+									</div>
+									
+									<div class="col-sm-6 multi-gd-img multi-gd-text ">
+										<a href="womens.html"><img src="images/kafeiji1.jpg" alt=" "/></a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</ul>
+					</li>
+					
+				  </ul>
+				</div>
+			  </div>
+			</nav>	
+		</div>
+		<div class="top_nav_right">
+			<div class="cart box_1">
+						<a href="checkout.html">
+							<h3> <div class="total">
+								<i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i>
+								<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span>件商品)</div>
+								
+							</h3>
+						</a>
+						<p><a href="javascript:;" class="simpleCart_empty">购物车</a></p>
+						
+			</div>	
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+
+
+
+
+
+
+<div class="container">
+ 
+  <div class="middle">
+		
+			 <div style="text-align:center;margin:10px;">
+				<div class="div1"><INPUT TYPE="checkbox" NAME="selectAll"  onchange="checkAll(event)">全选 商品信息</div>
+				<div class="div2">xxxxx</div>
+				<div class="div3">单价（元）</div>
+				<div class="div4">数量</div>
+				<div class="div5">金额（元）</div>
+				<div class="div6">操作</div>
+				<div class="div7"></div>
+			 </div>
+	<form name="shop1">
+			 <div style="margin:10px">
+				<INPUT TYPE="checkbox" NAME="shops" id="shop1" onchange="check(event)">店铺：咖啡</div>
+			  
+			  <div class="outter">
+			 
+				<div class="div1" >
+					
+					<INPUT TYPE="checkbox" name="goods" style="vertical-align:top" id="1" onchange="check2(event)">
+					<IMG SRC="images/coffee2.jpg" WIDTH="79" HEIGHT="80" BORDER="0" onmouseover="showpic(33)" onmouseout="hidepic(33)">	
+					
+					<div class="itempic" id="33">
+						<IMG SRC="images/coffee2.jpg" WIDTH="238" HEIGHT="240" BORDER="0" ALT="大图" >
+					</div>
+					
+					<div  style="font:12px;width:100px;vertical-align:top;display:inline-block;"><A HREF="" alt="coffee" >coffee2</A></div>
+				</div>
+				<div class="div2" style="color:gray;font-size:12px">口味分类：超苦<br>
+                       重量：1000g</div>
+				<div class="div3" id="p1">9.99</div>
+				<div class="div4">
+					<input type="number" name="num" value="1" style="width:60px;text-align:center" onchange="count(1)" id="n1"></div>
+				<div class="div5"   id="u1">9.99</div>
+				<div class="div6" style="font-size:12px;text-align:center;line-height:20px"><A HREF="">移入收藏夹</A><br><A HREF="">删除</A></div>
+				<div class="div7"></div>
+				
+			 </div>
+			  <div class="outter">
+
+				<div class="div1" >
+					<INPUT TYPE="checkbox" name="goods" style="vertical-align:top" id="2" onchange="check2(event)">
+					<IMG SRC="images/coffee4.jpg" WIDTH="79" HEIGHT="80" BORDER="0" ALT="" onmouseover="showpic(44)" onmouseout="hidepic(44)">
+					<div class="itempic" id="44">
+						<IMG SRC="images/coffee4.jpg" WIDTH="238" HEIGHT="240" BORDER="0" ALT="">
+					</div>
+					<span  style="font:12px;width:100px;vertical-align:top;display:inline-block"><A HREF="" alt="coffee">coffee4</A></span>
+				</div>
+				<div class="div2" style="color:gray;font-size:12px">口味分类：超苦<br>重量：100g</div>
+				<div class="div3" id="p2">49.0</div>
+				<div class="div4"><input type="number" name="num" value="1" id="n2" style="width:60px;text-align:center" onchange="count(2)"></div>
+				<div class="div5" id="u2">49.0</div>
+				<div class="div6" style="font-size:12px;text-align:center;line-height:20px"><A HREF="">移入收藏夹</A><br><A HREF="">删除</A></div>
+				<div class="div7"></div>
+			 </div>
+	</form>
+	<form name="shop2">
+			  <div style="margin:10px"><INPUT TYPE="checkbox" NAME="shops" id="shop2" onchange="check(event)">店铺：咖啡豆</div>
+			   <div class="outter">
+				<div class="div1" >
+					<INPUT TYPE="checkbox" name="goods" style="vertical-align:top" id="3" onchange="check2(event)">
+					<IMG SRC="images/dou1.jpg" WIDTH="79" HEIGHT="80" BORDER="0" ALT="" onmouseout="hidepic(11)" onmouseover="showpic(11)">
+					<div class="itempic" id="11">
+					<IMG SRC="images/dou1.jpg" WIDTH="240" HEIGHT="205" BORDER="0" ALT="">
+					</div>
+					<span  style="font:12px;width:100px;vertical-align:top;display:inline-block"><A HREF="" alt="">咖啡豆1</A></span>
+				</div>
+				<div class="div2" style="color:gray;font-size:12px"><span style="color:pink">xxxx</span></div>
+				<div class="div3" id="p3">3.15</div>
+				<div class="div4"><input type="number" name="num" value="1" id="n3" style="width:60px;text-align:center" onchange="count(3)"></div>
+				<div class="div5" id="u3">3.15</div>
+				<div class="div6" style="font-size:12px;text-align:center;line-height:20px"><A HREF="">移入收藏夹</A><br><A HREF="">删除</A></div>
+				<div class="div7"></div>
+
+			 </div>
+			  <div class="outter">
+				<div class="div1" >
+					<INPUT TYPE="checkbox" name="goods" style="vertical-align:top" id="4" onchange="check2(event)">
+					<IMG SRC="images/dou4.jpg" WIDTH="79" HEIGHT="80" BORDER="0" ALT=""onmouseout="hidepic(22)" onmouseover="showpic(22)">
+					<div class="itempic" id="22">
+					<IMG SRC="images/dou4.jpg" WIDTH="240" HEIGHT="205" BORDER="0" ALT="">
+					</div>
+					<span  style="font:12px;width:100px;vertical-align:top;display:inline-block"><A HREF="" alt="">咖啡豆4</A></span>
+				</div>
+				<div class="div2" style="font-size:12px;color:gray"><span style="color:pink">xxxx</span></div>
+				<div class="div3" id="p4">3.15</div>
+				<div class="div4"><input type="number" name="num" value="1" id="n4" style="width:60px;text-align:center" onchange="count(4)"></div>
+				<div class="div5" id="u4" >3.15</div>
+				<div class="div6" style="font-size:12px;text-align:center;line-height:20px"><A HREF="">移入收藏夹</A><br><A HREF="">删除</A></div>
+				<div class="div7"></div>
+			 </div>
+	</form>
+			 <div style="text-align:right;">已选商品<span style="font-size:2em;color:#d2691e;font-weight:bolder" id="piece">0</span>件
+			           合计 (不含运费)<span style="font-size:2em;color:#d2691e;font-weight:bolder">￥<span id="money" >0</span></span>
+					 <A HREF="">  <div style="display:inline-block;width:120px;height:30px;background:#d2691e;-webkit-border-radius:10;font-size:20px;color:white;font-weight:bold;font-family:黑体;text-align:center;padding:10px;height:50px">结 算</div></A>
+			 
+			 </div>
+	
+  </div>
+</div>
+ <footer>
+		<div class="copy-right">
+			<p>Copyright &copy; 2016.928曹娟.人机交互.咖啡商城</p>
+		</div>
+</footer>
+
+
+
+ <SCRIPT LANGUAGE="JavaScript">
+
+ //¼ÆËã½ð¶î
+ function count(x){     
+	var price=document.getElementById("p"+x).innerHTML; 
+  var num=document.getElementById("n"+x).value;   
+   document.getElementById("u"+x).innerHTML=price*num;
+   cal();
+ }
+//¼ÆËã×Ü¼Û
+function  cal(){
+var piece=0; var money=0;
+var	o=document.getElementsByTagName("input");
+		for(i=0;i<o.length;i++){
+			if(o[i].type=="checkbox")
+			{if(o[i].checked&&o[i].name=="goods"){
+			t=document.getElementById("u"+o[i].id).innerHTML;
+			piece+=1;money+=Number(t);		
+		}}}
+		document.getElementById("piece").innerHTML=piece;
+		document.getElementById("money").innerHTML=money.toFixed(2);
+		
+}
+ //µêÆÌÈ«Ñ¡
+function selectAll(element) {
+   
+	var o = element.form.goods;	
+		for (i=0; i<o.length; i++) {
+			o[i].checked = true;
+		}	 
+	cal();
+}
+//µêÆÌÈ¡ÏûÈ«Ñ¡
+function unSelectAll(element) {    
+	var o = element.form.goods;		
+		for (i=0; i<o.length; i++) {
+			o[i].checked = false;
+		}	 
+	cal();
+}
+function checkAll(e){
+	if(e.srcElement.checked)
+	{//È«Ñ¡	    
+		var o=document.getElementsByTagName("input");	
+		for(i=0;i<o.length;i++){
+			if(o[i].type=="checkbox") o[i].checked=true;
+		}
+	}
+	else
+	{	//È¡ÏûÈ«Ñ¡	
+	
+	var o=document.getElementsByTagName("input");		
+		
+		for(i=0;i<o.length;i++){
+			if(o[i].type=="checkbox") o[i].checked=false;
+		}
+	}
+	cal();
+}
+
+function check(e)
+{
+	if (e.srcElement.checked)
+	  	    {selectAll(e.srcElement);
+			  
+			}
+	else	unSelectAll(e.srcElement);
+}
+function  showpic(y)
+{    
+	var o=document.getElementById(y).style.display="block";
+}
+function  hidepic(y)
+{    
+	var o=document.getElementById(y).style.display="none";
+}
+
+function check2(e){
+  if(e.srcElement.checked)
+  {    var j=0;
+		var o=e.srcElement.form.goods;
+		for(i=0;i<o.length;i++)
+		{if(o[i].checked){j++;}
+		else break;	}
+		if(j==o.length) e.srcElement.form.shops.checked=true;
+  }else
+		e.srcElement.form.shops.checked=false;
+ cal();
+}
+ </SCRIPT>
+
+</body>
+</html>
